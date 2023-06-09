@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página personal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .parallax {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      height: 400px;
+    }
+
+    .parallax-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: #fff;
+    }
+
+    .text-white {
+      color: #fff;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.7) !important;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .navbar-brand {
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-link {
+      color: #fff;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Antonio Cleves</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades" onclick="scrollToSection('#habilidades')">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies" onclick="scrollToSection('#hobbies')">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#conocimientos" onclick="scrollToSection('#conocimientos')">Conocimientos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="parallax">
+    <div class="parallax-content">
+      <h1 class="text-black">Bienvenido a mi página personal</h1>
+      <p class="text-black">¡Explora mis habilidades, hobbies y conocimientos!</p>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <h2 id="habilidades">Habilidades</h2>
+    <p>A lo largo de mi trayectoria, he desarrollado y fortalecido diversas habilidades, algunas de las cuales incluyen:</p>
+    <ul>
+      <li>Comunicación efectiva</li>
+      <li>Resolución de problemas</li>
+      <li>Trabajo en equipo</li>
+      <li>Adaptabilidad</li>
+      <li>Creatividad</li>
+      <li>Gestión del tiempo</li>
+      <li>Pensamiento crítico</li>
+    </ul>
+
+    <h2 id="hobbies">Hobbies</h2>
+    <ul>
+      <li>Nadar</li>
+      <li>Leer</li>
+      <li>Jugar ajedrez</li>
+      <li>Comer</li>
+      <li>Gimnasio</li>
+    </ul>
+
+    <h2 id="conocimientos">Conocimientos</h2>
+    <p>A lo largo de mi trayectoria, he adquirido experiencia y conocimientos en diversos lenguajes de programación y tecnologías. Algunos de mis conocimientos destacados incluyen:</p>
+    <ul>
+      <li>Java: Tengo experiencia en el desarrollo de aplicaciones utilizando el lenguaje de programación Java, tanto en entornos de desarrollo tradicionales como en el desarrollo de aplicaciones empresariales basadas en JavaEE.</li>
+      <li>HTML: Poseo amplios conocimientos en el lenguaje de marcado HTML (HyperText Markup Language), utilizado para estructurar y presentar el contenido en la web.</li>
+      <li>CSS: Estoy familiarizado con CSS (Cascading Style Sheets) y su aplicación para definir el estilo y la apariencia visual de los elementos HTML en las páginas web.</li>
+      <li>JavaScript: Tengo experiencia en el desarrollo de aplicaciones web interactivas utilizando JavaScript, así como en el uso de bibliotecas y frameworks populares como React y Angular.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p><strong>Nombre:</strong> Antonio Cleves Aristizabal</p>
+    <p><strong>Dirección:</strong> Por acá</p>
+    <p><strong>Correo:</strong> aclevesa@unbosque.edu.co</p>
+    <p><strong>Celular:</strong> 3175202991</p>
+    <p>© 2023 Antonio Cleves. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.querySelector(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+
+</html>
